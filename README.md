@@ -1,4 +1,4 @@
-# C++ Files
+# Data Structure and Algorithm with C++
 
 <a href="https://twitter.com/srkeshri_srk">
         <img src="https://img.shields.io/twitter/follow/srkeshri_srk?style=social"
