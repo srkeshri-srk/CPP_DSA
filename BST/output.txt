@@ -1,3 +1,18 @@
+Enter Root Data : 
+Enter left child of 1
+Enter left child of 1
+Enter left child of 2
+Enter left child of 2
+Enter left child of 3
+Enter left child of 3
+Enter left child of 4
+Enter left child of 4
+Enter left child of 5
+Enter left child of 5
+Enter left child of 6
+Enter left child of 6
+Enter left child of 7
+Enter left child of 7
 1 : L2 R3
 2 : L4 R5
 4 : 
