@@ -148,6 +148,14 @@ void printTreeLevelWise(BinaryTreeNode<int>* root) {
 	}
 }
 
+int countNodes(BinaryTreeNode<int>* root) {
+	if (root==NULL) {
+		return 0;
+	}
+
+	return 1 + countNodes(root->left) + countNodes(root->right);
+}
+
 
 int main() 
 {
@@ -169,5 +177,8 @@ int main()
     // BinaryTreeNode<int>* root = takeTree();
     BinaryTreeNode<int>* root = takeTreeLevelWise();
     printTreeLevelWise(root);
+    cout<<endl;
+
+    cout<<"Total Nodes: "<<countNodes(root)<<endl;
 
 }
