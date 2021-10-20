@@ -156,6 +156,36 @@ int countNodes(BinaryTreeNode<int>* root) {
 	return 1 + countNodes(root->left) + countNodes(root->right);
 }
 
+void inOrder(BinaryTreeNode<int> *root) {
+    if (root==NULL) {
+        return;
+    }
+    
+    inOrder(root->left);
+    cout<<root->data<<" ";
+    inOrder(root->right);
+}
+
+void preOrder(BinaryTreeNode<int> *root) {
+    if (root==NULL) {
+        return;
+    }
+    
+    cout<<root->data<<" ";
+    preOrder(root->left);
+    preOrder(root->right);
+}
+
+void postOrder(BinaryTreeNode<int> *root) {
+    if (root==NULL) {
+        return;
+    }
+    
+    postOrder(root->left);
+    postOrder(root->right);
+    cout<<root->data<<" ";
+}
+
 
 int main() 
 {
@@ -180,5 +210,14 @@ int main()
     cout<<endl;
 
     cout<<"Total Nodes: "<<countNodes(root)<<endl;
+
+    cout<<"In-Order"<<" - ";
+    inOrder(root);
+
+    cout<<"\nPre-Order"<<" - ";
+    preOrder(root);
+
+    cout<<"\nPost-Order"<<" - ";
+    postOrder(root);
 
 }
